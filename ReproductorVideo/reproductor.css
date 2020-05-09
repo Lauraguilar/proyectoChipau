@@ -1,49 +1,87 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
-section, nav {
-    display : block;
+section,
+nav {
+  display: block;
+}
+
+.videoNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #reproductor {
-    width: 720px;
-    margin: 20px auto;
-    padding: 5px;
-    background: #999999;
-    border: 1px solid #666666;
-    border-radius: 5px;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 3px;
+  background: linear-gradient(#36343c, #27262b);
+  border: 1px solid #0d0d0e;
+  box-shadow: -2vw -2vw 5vw rgba(249, 172, 74, 0.92), 1vw 1vw 4vw 0px #7d2608;
+  border-radius: 5px;
 }
 
-nav {
-    margin: 5px 0px;
-    background: #999999;
+#medio {
+  width: 85vw;
+  border-radius: 2px;
 }
 
-#botones {
-    float: left;
-    width: 200px;
-    height: 20px;
-    background: #999999;
-
+.botones {
+  display: flex;
+  margin: 2px 8px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 0px #1a181d, -2px -2px 4px 0px #3f3b46;
 }
-button {
-    color: white;
+
+.videoBtn {
+  color: #fff;
+  font-size: 1.4em;
+  border: none;
+  background: #35323b;
+  box-shadow: inset 1px 1px 2px 0px #4f4a56;
+  display: flex;
+}
+
+.videoBtn:hover,
+.videoBtn:active {
+  background: #4c4854;
+}
+
+.videoBtn:focus {
+  outline: none;
+  box-shadow: inset 0 0 8px #0a0707;
+}
+
+.videoBtn span {
+  padding: 5px;
+}
+
+/* El primer y el último botón con bordes redondeados */
+.videoBtn:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.videoBtn:last-child {
+  border-radius: 0 8px 8px 0;
 }
 
 #barra {
-    position: relative;
-    float: left;
-    width: 500px;
-    height: 16px;
-    padding: 2px;
-    border: 1px solid #CCCCCC;
-    background: #EEEEEE;
+  position: relative;
+  width: 60vw;
+  height: 12px;
+  height: 10px;
+  background-color: #161519;
+  box-shadow: 2px 2px 5px #070708 inset, -2px -2px 5px rgb(42, 39, 49) inset;
+  border-radius: 35px;
+  border: 1px solid rgba(22, 21, 25, 0.5);
 }
 
 #progreso {
-    position: absolute;
-    width: 0px;
-    height: 16px;
-    background: rgba(0,0,150,.2);
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  border-radius: 35px;
+  background: linear-gradient(90deg, #ef6536, #e6a510);
+  box-shadow: 0 0 5px rgba(239, 101, 54, 0.75);
 }

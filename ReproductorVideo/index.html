@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reproductor video</title>
-        <link rel="stylesheet" href="reproductor.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="reproductor.js"></script>
-    </head>
-    <body>
-        <section id="reproductor">
-            <video id="medio" width="720" height="400" poster="fondo.png">
-                <source src="chipauHD.mp4">
-            </video>
-            <nav>
-                <div id="botones">
-                    <button type="button" id="retroceder" onclick="saltar(-5)"><span class="icon-backward"></span></button>
-                    <button type="button" id="reproducir"><span class="icon-play2"></span></button>
-                    <button type="button" id="parar"><span class="icon-stop"></span></button>
-                    <button type="button" id="avanzar" onclick="saltar(5)"><span class="icon-forward2"></span></button>   
-                </div>
-                <div id="barra">
-                    <div id="progreso"></div>
-                </div>
-                <div style="clear: both"></div>  
-            </nav>
-        </section>
-    </body>
-    
+  <head>
+    <title>Reproductor video</title>
+    <link rel="stylesheet" href="reproductor.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="reproductor.js"></script>
+  </head>
+  <body>
+    <section id="reproductor">
+      <video id="medio" poster="fondo.png">
+        <source src="chipauHD.mp4" />
+      </video>
+      <nav class="videoNav">
+        <div class="botones">
+          <button
+            class="videoBtn"
+            type="button"
+            id="retroceder"
+            onclick="saltar(-5)"
+          >
+            <span class="icon-backward"></span>
+          </button>
+          <button class="videoBtn" type="button" id="reproducir">
+            <span class="icon-play2"></span>
+          </button>
+          <button class="videoBtn" type="button" id="parar">
+            <span class="icon-stop"></span>
+          </button>
+          <button
+            class="videoBtn"
+            type="button"
+            id="avanzar"
+            onclick="saltar(5)"
+          >
+            <span class="icon-forward2"></span>
+          </button>
+        </div>
+        <div id="barra">
+          <div id="progreso"></div>
+        </div>
+        <div style="clear: both;"></div>
+      </nav>
+    </section>
+  </body>
 </html>

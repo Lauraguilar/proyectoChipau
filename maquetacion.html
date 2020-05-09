@@ -29,7 +29,7 @@
                     <li><a href="#MarieCurie">Marie Curie</a></li>
                     <li><a href="#Cleopatra">Cleopatra</a></li>
             <!--    <li><a href="#Andresito">Andresito</a></li> -->
-                    <li><a href="#Pedidos">Pedidos</a></li> 
+                    <li><a href="#Pedidos">Pedidos</a></li>
                     <li><a href="#redes">Contacto</a></li>
                 </ul>
             </nav>
@@ -99,20 +99,20 @@
         </section>
         <section id="video">
             <section id="reproductor">
-                <video id="medio" width="720" height="400" poster="ReproductorVideo/fondo.png">
+                <video id="medio" poster="ReproductorVideo/fondo.png">
                     <source src="ReproductorVideo/chipauVideo.mp4">
                 </video>
-                <nav>
-                    <div id="botones">
-                        <button type="button" id="retroceder" onclick="saltar(-5)"><span class="icon-backward"></span></button>
-                        <button type="button" id="reproducir"><span class="icon-play2"></span></button>
-                        <button type="button" id="parar"><span class="icon-stop"></span></button>
-                        <button type="button" id="avanzar" onclick="saltar(5)"><span class="icon-forward2"></span></button>   
+                <nav class="videoNav">
+                    <div class="botones">
+                        <button class="videoBtn" type="button" id="retroceder" onclick="saltar(-5)"><span class="icon-backward"></span></button>
+                        <button class="videoBtn" type="button" id="reproducir"><span class="icon-play2"></span></button>
+                        <button class="videoBtn" type="button" id="parar"><span class="icon-stop"></span></button>
+                        <button class="videoBtn" type="button" id="avanzar" onclick="saltar(5)"><span class="icon-forward2"></span></button>
                     </div>
                     <div id="barra">
                         <div id="progreso"></div>
                     </div>
-                    <div style="clear: both"></div>  
+                    <div style="clear: both"></div>
                 </nav>
             </section>
         </section>
