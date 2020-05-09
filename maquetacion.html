@@ -1,0 +1,142 @@
+<!------------------------------------>
+<!--autor: Laura Aguilar ------------->
+<!--mail: laura.aguilar90@gmail.com -->
+<!------------------------------------>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proyecto Chipau</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="maquetacion.css">
+        <link rel="stylesheet" href="iconos.css">
+        <link rel="stylesheet" href="Jquery/css/lightbox.css">
+        <link rel="stylesheet" href="ReproductorVideo/reproductor.css">
+        <link rel="stylesheet" href="ReproductorVideo/style.css">
+        <link rel="stylesheet" href="AnimacionCSS/animacion.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div id="cabeceras">
+                <a href="" id="links" target="new"><img src="" id="banner"></a>
+            </div>
+            <nav id="botonera">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Socrates">Sócrates</a></li>
+                    <li><a href="#Sartre">Sartre</a></li>
+                    <li><a href="#Pavlov">Pavlov</a></li>
+                    <li><a href="#MarieCurie">Marie Curie</a></li>
+                    <li><a href="#Cleopatra">Cleopatra</a></li>
+            <!--    <li><a href="#Andresito">Andresito</a></li> -->
+                    <li><a href="#Pedidos">Pedidos</a></li> 
+                    <li><a href="#redes">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Inicio">
+            <div id="derecha">
+                <iframe width="100%" height="460" src="https://www.youtube.com/embed/g9rHdwpPZXM?start=10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <article id="texto_izq">
+                <h2>¿Quienes Somos?</h2>
+                </br>
+                <p>Somos una empresa familiar gastronómica oriunda de la ciudad de Corrientes Capital, al Noreste del pais. Nuestra especialidad son las pizzas con masa de chipa, una exquisites gastronomica de la zona!.</p>
+            </article>
+        </section>
+        <section id="Socrates">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+        <section id="Sartre">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+        <section id="Pavlov">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+        <section id="MarieCurie">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+        <section id="Cleopatra">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+        <section id="Pedidos">
+            <div id="pedido">
+                <h2>¡Hace tu pedido!</h2>
+                <form name="Formulario">
+                    <input type="text" id="nombre" maxlength="30" placeholder="Nombre" required>
+                    </br>
+                    <input type="text" id="direccion" maxlength="50" placeholder="Dirección" required>
+                    </br>
+                    <input type="mail" id="mail" maxlength="50" placeholder="Mail">
+                    </br>
+                    <input type="tel" id="telefono" placeholder="Telefono">
+                    </br>
+                    <input type="text" id="pizza" placeholder="¿Que pizza queres?" required>
+                    </br>
+                    </br>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+    <!--
+        <section id="Andresito">
+            <div id="izquierda"></div>
+            <div id="derecha"></div>
+        </section>
+    -->
+        <section id="Fotos">
+            <a href="pizzas/andresito3.jpg" data-lightbox="grupo" data-title="Andresito"><img src="pizzas/andresito2_mini.jpg"></a>
+            <a href="pizzas/cleopatra3.jpg" data-lightbox="grupo" data-title="Cleopatra"><img src="pizzas/cleopatra2_mini.jpg"></a>
+            <a href="pizzas/mariecurie3.jpg" data-lightbox="grupo" data-title="Marie Curie"><img src="pizzas/mariecurie2_mini.jpg"></a>
+            <a href="pizzas/pavlov3.jpg" data-lightbox="grupo" data-title="Pavlov"><img src="pizzas/pavlov2_mini.jpg"></a>
+            <a href="pizzas/sartre3.jpg" data-lightbox="grupo" data-title="Sastre"><img src="pizzas/sartre2_mini.jpg"></a>
+            <a href="pizzas/socrates3.jpg" data-lightbox="grupo" data-title="Socrates"><img src="pizzas/socrates2_mini.jpg"></a>
+        </section>
+        <section id="video">
+            <section id="reproductor">
+                <video id="medio" width="720" height="400" poster="ReproductorVideo/fondo.png">
+                    <source src="ReproductorVideo/chipauVideo.mp4">
+                </video>
+                <nav>
+                    <div id="botones">
+                        <button type="button" id="retroceder" onclick="saltar(-5)"><span class="icon-backward"></span></button>
+                        <button type="button" id="reproducir"><span class="icon-play2"></span></button>
+                        <button type="button" id="parar"><span class="icon-stop"></span></button>
+                        <button type="button" id="avanzar" onclick="saltar(5)"><span class="icon-forward2"></span></button>   
+                    </div>
+                    <div id="barra">
+                        <div id="progreso"></div>
+                    </div>
+                    <div style="clear: both"></div>  
+                </nav>
+            </section>
+        </section>
+        <section id="animacion">
+            <section id="animacionCSS">
+                <div id="axis">
+                    <img class="object pizza move-ne" src="AnimacionCSS/pizza2.png"/>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div id="marca"></div>
+            <nav id="redes">
+                <ul>
+                    <li><a href="https://www.facebook.com/chipau.arg/"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://www.instagram.com/chipau.arg/"><span class="icon-instagram"></span></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=543794079982"><span class="icon-whatsapp"></span></a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script type="text/javascript" src="Jquery/js/lightbox-plus-jquery.min.js"></script>
+    <!--    <script type="text/javascript" src="validar.js"></script>   -->
+        <script type="text/javascript" src="banner.js"></script>
+        <script type="text/javascript" src="otrasValidaciones.js"></script>
+        <script type="text/javascript" src="ReproductorVideo/reproductor.js"></script>
+    </body>
+</html>

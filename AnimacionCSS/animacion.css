@@ -1,0 +1,26 @@
+section#animacionCSS {
+    width: 700px;
+    height: 400px;
+    background-image: url(galaxia.jpg);
+    background-size: cover;
+}
+
+.object {
+    position: sticky;
+    transition: all 4s ease-in-out;
+    -webkit-transition: all 4s ease-in-out; 
+    -moz-transition: all 4s ease-in-out; 
+    -o-transition: all 4s ease-in-out;
+  }
+  .pizza {
+      top: 0%;
+      left: 60%;
+  }
+
+#axis:hover .move-ne {
+    transform: translate(-500px,200px) rotate(360deg);
+    -webkit-transform: translate(-500px,200px) rotate(360deg);
+    -o-transform: translate(-500px,200px) rotate(360deg); 
+    -moz-transform: translate(-500px,200px) rotate(360deg);
+     
+}
