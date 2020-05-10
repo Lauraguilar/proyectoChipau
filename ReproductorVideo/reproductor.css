@@ -26,6 +26,11 @@ nav {
 #medio {
   width: 85vw;
   border-radius: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+video#medio[poster] {
+  object-fit: cover;
 }
 
 .botones {
@@ -36,16 +41,25 @@ nav {
 }
 
 .videoBtn {
-  color: #fff;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  padding: 0.05em 0.5em;
   border: none;
-  background: #35323b;
-  box-shadow: inset 1px 1px 2px 0px #4f4a56;
+  background: linear-gradient(0deg, #232127, #35323b);
+  color: #5a5761;
+  text-shadow: 0 -1px 1px rgba(8, 8, 8, 0.5), 0 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 1px 1px 1px 0px #4f4a56;
   display: flex;
+  cursor: pointer;
+  transition: background 100ms ease-in, color 200ms ease-in;
 }
 
-.videoBtn:hover,
+.videoBtn:hover {
+  color: #b1adbb;
+  background: linear-gradient(0deg, #35323b, #4c4854);
+}
 .videoBtn:active {
+  color: #ea8928;
+  text-shadow: 0 0 5px rgba(239, 101, 54, 0.75);
   background: #4c4854;
 }
 
